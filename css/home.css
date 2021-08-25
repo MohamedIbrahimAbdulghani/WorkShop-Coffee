@@ -1,0 +1,594 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    background-color: #d8c62d;
+    display: none;
+    outline: none;
+  }
+  .scrolltop i {
+    color: white;
+  }
+
+/* Start Section Navbar  */
+section.navbar-section .navbar {
+    padding: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+section.navbar-section .navbar button.navbar-toggler:focus {
+    outline: 0
+}
+section.navbar-section .navbar ul li a {
+    color: #333;
+    margin: 5px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    position: relative;
+}
+section.navbar-section .navbar ul li a:hover {
+    color: #d8c62d
+}
+section.navbar-section .navbar ul li:hover a::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #d8c62d;
+}
+
+/* End Section Navbar  */
+
+/* Start Section Slider  */
+section.slider {
+    overflow: hidden;
+    padding: 0px 20px
+}
+section.slider .carousel {
+    padding: 0;
+}
+section.slider .carousel img {
+    height: 200%;
+}
+section.slider .carousel-inner {
+    transform: translateY(90px);
+    -webkit-transform: translateY(90px);
+    -moz-transform: translateY(90px);
+    -ms-transform: translateY(90px);
+    -o-transform: translateY(90px);
+}
+section.slider .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(119, 119, 119, 0.24);
+}
+section.slider .carousel-item .carousel-caption {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: #222;
+}
+section.slider .carousel-item .carousel-caption h5 {
+    margin-top: -80px;
+}
+section.slider .carousel-item .carousel-caption h5,
+section.slider .carousel-item .carousel-caption p {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0;
+}
+section.slider .carousel-item .carousel-caption h5 span,
+section.slider .carousel-item .carousel-caption p span {
+    font-size: 80px;
+}
+section.slider .carousel button {
+    border: none;
+    background-color: transparent
+}
+section.slider .carousel i {
+    font-size: 50px;
+    color: #222;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    position: absolute;
+    top: 50%
+}
+section.slider .carousel i:hover {
+    color: #d8c62d
+}
+section.slider .carousel .button-shop {
+    background-color: #d8c62d;
+    color: white;
+    transition: all 0.5s ease-in;
+    font-weight: bold;
+    padding: 10px 50px;
+    margin-top: -15px;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+section.slider .carousel .button-shop:hover {
+    background-color: transparent;
+    border: 1px solid #222;
+    color: #222;
+}
+/* End Section Slider */
+
+/* Start Section About */
+section.about {
+    padding: 50px 5px;
+}
+section.about .about-img img {
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+section.about .about-img:hover img {
+    margin-top: 15px;
+}
+section.about .about-description {
+    padding: 50px;
+}
+section.about .about-description h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 11px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+section.about .about-description h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.5;
+    width: 100%;
+    letter-spacing: -1.3px;
+}
+section.about .about-description .about-body {
+    padding: 20px 40px
+}
+section.about .about-description .about-body p:first-child,
+section.about .about-description .about-body p:last-child  {
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2.1em;
+    width: 100%;
+}
+section.about .about-description .about-body .stat .stat-item {
+    position: relative;
+}
+section.about .about-description .about-body .stat .stat-item h3 {
+    color: #333;
+    font-family: "Slackey", cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+section.about .about-description .about-body .stat .stat-item p {
+    font-family: "Montserrat", sans-serif;
+}
+section.about .about-description .about-body .stat .stat-item::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 84px;
+    height: 3px;
+    background-color: #d8c62d;
+}
+section.about .about-description .about-body .stat .stat-item:hover::before {
+    width: 100%;
+}
+/* End Section About */
+
+/* Start Section Selling */
+section.selling .selling-description h2 {
+    font-family: "Slackey", cursive;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2em;
+    letter-spacing: -0.7px;
+    margin-bottom: 30px;
+}
+section.selling .selling-description p {
+    font-family: "Montserrat", sans-serif;
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.1em;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+}
+section.selling .selling-description .button-shop {
+    background-color: transparent;
+    border: 1px solid #222;
+    color: #222;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+section.selling .selling-description .button-shop:hover {
+    background-color: #d8c62d;
+    color: white;
+    transition: all 0.5s ease-in;
+    font-weight: bold;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    border: 1px solid #d8c62d;
+}
+section.selling .selling-img {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+section.selling .selling-img-element {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+/* End Section Selling  */
+
+
+/* Start Section Hotoffer  */
+section.hotoffer .hotoffer-img {
+    background-image: url("../images/Mask-Group-2.png");
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    padding: 0px 40px;
+}
+section.hotoffer .hotoffer-img h2 {
+    font-family: "Slackey", cursive;
+    color: white;
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 40%;
+}
+section.hotoffer .hotoffer-img p {
+    font-family: "Slackey", cursive;
+    color: #d8c62d;
+    font-size: 25px;
+}
+section.hotoffer .hotoffer-img .button-shop {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #d8c62d;
+    transition: all 0.5s ease-in;
+    font-weight: bold;
+    padding: 10px 50px;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+section.hotoffer .hotoffer-img .button-shop:hover {
+    background-color: #d8c62d;
+    color: white
+}
+section.hotoffer .hotoffer-description {
+    padding: 135px 0 0
+}
+section.hotoffer .hotoffer-description h2 {
+    font-family: "Slackey", cursive;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: -1.2px; 
+    position: relative;
+}
+section.hotoffer .hotoffer-description h2::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 70%;
+    height: 3px;
+    background-color: #222;
+}
+
+/* End Section Hotoffer */
+
+/* Start Section Categories */
+section.categories .categories-description h2 {
+    font-family: "Slackey", cursive;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #222;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+section.categories .categories-link {
+    display: inline-block;
+    padding: 28px 0 20px 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #222;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+section.categories .categories-link:hover {
+    color: #d8c62d;
+    text-decoration: none;
+}
+section.categories .popular-categories .popular-categories-img {
+    padding: 3px;
+    border: 1px solid #e8e7e7;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+section.categories .popular-categories .popular-categories-img img {
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+section.categories .popular-categories .popular-categories-img:hover img {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+section.categories .popular-categories .popular-categories-img a {
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-family: "Slackey", cursive;
+    font-size: 20px;
+    color: #222;
+}
+section.categories .popular-categories .popular-categories-img:hover a {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+/* End Section Categories */
+
+/* Start Section Discount */
+section.discount {
+    margin-top: 20px;
+    background-image: url("../images/bacground.png");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.discount .discount-description .button-shop {
+    background-color: #d8c62d;
+    color: white;
+    transition: all 0.5s ease-in;
+    font-weight: bold;
+    padding: 10px 50px;
+    margin-top: 10px;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+
+}
+section.discount .discount-description .button-shop:hover {
+    background-color: transparent;
+    border: 1px solid #222;
+    color: #222;
+}
+/* End Section Discount */
+
+/* Start  Section Footer  */
+section.footer {
+    background-color: #3b434c;
+    color: white;
+    padding: 40px 10px;
+    height: 70px;
+}
+section.footer .copyright {
+    float: left;
+}
+section.footer .design {
+    float: right;
+}
+section.footer span {
+    margin-top: -1%;
+}
+/* End  Section Footer  */
+
+
+
+
+
+
+
+
+
+
+
+/* Start MediaQuery  */
+@media(max-width: 991px) {
+    section.navbar-section .navbar ul {
+        margin-top: 20px;
+    }
+    section.slider .carousel i {
+        top: 60%
+    }
+    section.hotoffer .hotoffer-description h2 {
+        font-size: 40px;
+    }
+}
+@media(max-width: 925px) { 
+    section.slider .carousel-item .carousel-caption h5{
+        margin-top: -110px;
+    }
+ }
+ @media(max-width: 850px) {
+    section.slider .carousel-item .carousel-caption h5{
+        margin-top: -130px;
+    }
+ }
+ @media(max-width: 768px) {
+    section.slider .carousel-item .carousel-caption h5 {
+        margin-top: -25%;
+    }
+    section.hotoffer .hotoffer-description {
+        padding: 15px 0 0;
+    }
+    section.hotoffer .hotoffer-description h2::before {
+        width: 35%;
+    }
+    
+}
+@media(max-width: 780px) {
+    section.slider .carousel-item .carousel-caption h5{
+        margin-top: -26%;
+    }
+}
+@media(max-width: 770px) {
+    section.slider .carousel-item .carousel-caption p {
+        display: none;
+    }
+    section.slider .carousel-item .carousel-caption h5 {
+        margin-top: -23%;
+    }
+}
+@media(max-width: 650px) {
+    section.slider .carousel-item .carousel-caption h5,
+    section.slider .carousel-item .carousel-caption p {
+    font-size: 20px;
+}
+    section.slider .carousel-item .carousel-caption h5 span,
+    section.slider .carousel-item .carousel-caption p span {
+        font-size: 60px;
+    }
+    section.slider .carousel i {
+        top: 60%;
+    }
+
+}
+
+@media(max-width: 425px) {
+    section.slider .carousel-item .carousel-caption h5 {
+        margin-top: -70px;
+    }
+    section.slider .carousel-item .carousel-caption h5 span, 
+    section.slider .carousel-item .carousel-caption p span {
+        font-size: 25px;
+    }
+    section.slider .carousel i {
+        top: 60%;
+    }
+    section.slider .carousel .button-shop {
+        padding: 10px 50px;
+        margin-top: 2%;
+    }
+    section.footer .copyright {
+        margin-top: -30px;
+    }
+    section.footer .design {
+        margin-top: -10px;
+    }
+}
+@media(max-width: 375px) {
+    .navbar-brand {
+        width: 50%;
+    }
+    .navbar-brand img {
+        width: 150%;
+    }
+    section.slider .carousel .button-shop {
+        padding: 6px 50px;
+        margin-top: 1%;
+    }
+    section.slider .carousel-item .carousel-caption h5 span, 
+    section.slider .carousel-item .carousel-caption p span {
+        font-size: 20px;
+    }
+    section.slider .carousel-item .carousel-caption h5 {
+        margin-top: -68px
+    }
+    section.selling .selling-description h2 {
+        font-size: 45px;
+    }
+}
+@media(max-width: 320px) {
+    section.slider .carousel i {
+        top: 60%;
+    }
+    section.slider .carousel-item .carousel-caption h5 {
+        margin-top: -70px;
+    }
+    section.slider .carousel-item .carousel-caption h5 span, 
+    section.slider .carousel-item .carousel-caption p span {
+        font-size: 26px;
+    }
+     section.slider .carousel-item .carousel-caption p {
+        display: none;
+    }
+    section.slider .carousel .button-shop {
+        margin-top: -4%;
+    }
+    section.about .about-description .about-body .stat .stat-item {
+        width: 110%;
+        margin-bottom: 40px;
+    }
+    section.selling .selling-description h2 {
+        font-size: 40px
+    }
+    section.hotoffer .hotoffer-img h2 {
+        font-size: 75px;
+    }
+}
+/* End MediaQuery  */
